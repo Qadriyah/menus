@@ -1,0 +1,11 @@
+-- CreateTable
+CREATE TABLE "Menu" (
+    "id" SERIAL NOT NULL,
+    "name" TEXT NOT NULL,
+    "depth" INTEGER NOT NULL,
+    "parent" INTEGER NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Menu_pkey" PRIMARY KEY ("id")
+);
